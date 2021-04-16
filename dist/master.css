@@ -14,6 +14,7 @@ a {
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #e8e8e8;
 }
 
 .container {
@@ -24,6 +25,18 @@ body {
 .container-fluid {
   width: 70%;
   margin: 0 auto;
+}
+
+.purple {
+  background-color: #3c1567;
+}
+
+.grey {
+  background-color: #3c3c3c;
+}
+
+.blue {
+  background-color: #009cff;
 }
 
 header {
@@ -119,10 +132,6 @@ nav.bottom ul li img {
   color: #ffff;
 }
 
-main {
-  background-color: #e8e8e8;
-  height: 100%;
-}
 main .main-title {
   padding-top: 50px;
   text-align: center;
@@ -134,7 +143,7 @@ main .card-content {
 }
 main .card-content .main-card {
   padding: 30px 10px;
-  height: 350px;
+  height: 250px;
 }
 main .card-content .main-card img {
   width: 100%;
@@ -149,4 +158,22 @@ main .card-content .main-card .main-card-paragraph {
 }
 main .card-content .main-card .main-card-paragraph * {
   padding-top: 20px;
+}
+main .card-content .main-card .main-card-paragraph h4 em {
+  color: #009cff;
+}
+main .card-content .main-card .main-card-paragraph a {
+  color: #009cff;
+}
+main .container .gallery {
+  margin-top: 200px;
+}
+main .container .gallery .gallery-card {
+  width: calc(100% / 2);
+  height: 300px;
+  float: left;
+}
+main .container .gallery .gallery-card img {
+  height: 100%;
+  width: 100%;
 }

@@ -1,6 +1,4 @@
 main {
-  background-color: $bg-main;
-  height: 100%;
 
   .main-title {
     padding-top: $pd-5;
@@ -14,7 +12,7 @@ main {
 
     .main-card {
       padding: $pd-3 $pd-1;
-      height: 350px;
+      height: 250px;
 
       img {
         width: 100%;
@@ -28,11 +26,32 @@ main {
         background: $white;
         padding: $pd-2;
 
-           * {
-             padding-top: $pd-2;
-           }
+        * {
+          padding-top: $pd-2;
+        }
+        h4 em {
+          color: $blue;
+        }
 
+        a {
+          color: $blue;
+        }
+      }
+    }
+  }
 
+  .container {
+    .gallery {
+      margin-top: $mt-200;
+      .gallery-card {
+        width: calc(100% / 2);
+        height: 300px;
+        float: left;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
       }
     }
   }

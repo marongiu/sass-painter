@@ -1,6 +1,7 @@
 
 body {
   font-family: $font;
+  background-color: $bg-main;
 }
 .container {
   width: 65%;
@@ -10,6 +11,18 @@ body {
 .container-fluid {
   width: 70%;
   margin: 0 auto;
+}
+
+.purple {
+  background-color: $pink;
+}
+
+.grey {
+  background-color: $grey;
+}
+
+.blue {
+  background-color: $blue;
 }
 
 // @media all and (max-width: 1760px) {
