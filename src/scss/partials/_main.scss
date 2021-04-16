@@ -40,19 +40,47 @@ main {
     }
   }
 
-  .container {
-    .gallery {
-      margin-top: $mt-200;
-      .gallery-card {
-        width: calc(100% / 2);
-        height: 300px;
-        float: left;
+  .gallery {
+    margin-top: $mt-200;
+    .gallery-card {
+      width: calc(100% / 2);
+      height: 300px;
+      float: left;
 
-        img {
-          height: 100%;
-          width: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .gallery::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+
+  .link {
+    margin-top: $mt-3;
+    margin-bottom: $mt-3;
+
+    ul {
+      margin-top: $mt-5;
+      float: left;
+      width: calc(100% / 4);
+      li {
+        padding-top: $pd-1;
+        a {
+          color: $lightgrey;
+          font-size: 12px;
         }
       }
     }
+  }
+
+  .link::after {
+    display: table;
+    clear: both;
+    content: '';
   }
 }

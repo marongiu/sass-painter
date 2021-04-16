@@ -165,15 +165,47 @@ main .card-content .main-card .main-card-paragraph h4 em {
 main .card-content .main-card .main-card-paragraph a {
   color: #009cff;
 }
-main .container .gallery {
+main .gallery {
   margin-top: 200px;
 }
-main .container .gallery .gallery-card {
+main .gallery .gallery-card {
   width: calc(100% / 2);
   height: 300px;
   float: left;
 }
-main .container .gallery .gallery-card img {
+main .gallery .gallery-card img {
   height: 100%;
   width: 100%;
+}
+main .gallery::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+main .link {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+main .link ul {
+  margin-top: 50px;
+  float: left;
+  width: calc(100% / 4);
+}
+main .link ul li {
+  padding-top: 10px;
+}
+main .link ul li a {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+main .link::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+footer {
+  background: #1e1e1e;
+  width: 100%;
+  height: 50px;
 }
