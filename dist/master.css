@@ -207,5 +207,36 @@ main .link::after {
 footer {
   background: #1e1e1e;
   width: 100%;
-  height: 50px;
+  height: 100px;
+}
+footer .container .footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .footer-info .brand {
+  padding: 20px 0;
+  width: 50%;
+}
+footer .container .footer-info .brand ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .container .footer-info .copyright {
+  width: 50%;
+  padding: 20px 0;
+}
+footer .container .footer-info .copyright ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .footer-info .copyright ul li {
+  color: #ffff;
+  padding: 0 10px;
+  font-size: 14px;
+}
+footer .container .footer-info .copyright ul li a {
+  color: #ffff;
 }
