@@ -4,26 +4,25 @@ footer {
 
   .container {
     .footer-info {
-
-      @include flex(center,center,no-wrap)
+      @include flex(center,flex-start,no-wrap);
       .brand {
         padding: $pd-2 0;
-        width: 50%;
+        width: 30%;
         ul {
-          @include flex(center,space-around,no-wrap)
+          @include flex(center,space-between,no-wrap);
         }
       }
 
       .copyright {
-          width: 50%;
-          padding: $pd-2 0;
+        width: 70%;
+        padding: $pd-2 0;
         ul {
-          @include flex(center,center, no-wrap);
+          @include flex(center,flex-end,no-wrap);
 
           li {
             color: $white;
             padding: 0 $pd-1;
-            font-size: 14px;
+            font-size: 12px;
             a {
               color: $white;
             }
@@ -31,5 +30,5 @@ footer {
         }
       }
     }
-    }
+  }
 }

@@ -226,33 +226,34 @@ footer {
 }
 footer .container .footer-info {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-start;
+  flex-wrap: no-wrap;
 }
 footer .container .footer-info .brand {
   padding: 20px 0;
-  width: 50%;
+  width: 30%;
 }
 footer .container .footer-info .brand ul {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: no-wrap;
 }
 footer .container .footer-info .copyright {
-  width: 50%;
+  width: 70%;
   padding: 20px 0;
 }
 footer .container .footer-info .copyright ul {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-wrap: no-wrap;
 }
 footer .container .footer-info .copyright ul li {
   color: #ffff;
   padding: 0 10px;
-  font-size: 14px;
+  font-size: 12px;
 }
 footer .container .footer-info .copyright ul li a {
   color: #ffff;
