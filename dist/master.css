@@ -8,28 +8,50 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 65%;
   margin: 0 auto;
 }
 
 .container-fluid {
-  width: 75%;
+  width: 70%;
   margin: 0 auto;
 }
 
 header {
   background: #101010;
   width: 100%;
-  height: 150px;
+  height: 95px;
 }
 
-nav {
+nav.top-right {
   float: right;
   color: #ffff;
   margin-top: 20px;
 }
-nav ul {
+nav.top-right ul {
+  display: flex;
+  align-items: center;
+}
+nav.top-right ul li {
+  padding: 0 10px;
+  color: #4d4d4d;
+}
+nav.top-right ul li i {
+  color: #009cff;
+}
+nav.top-right ul li i:hover {
+  opacity: 0.8;
+}
+
+nav.bottom {
+  padding-top: 50px;
+}
+nav.bottom ul {
   display: flex;
   align-items: center;
 }

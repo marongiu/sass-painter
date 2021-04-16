@@ -1,9 +1,26 @@
-nav {
+nav.top-right {
   float: right;
   color: $white;
   margin-top: $mt-2;
   ul {
     display: flex;
     align-items: center;
+    li {
+      padding: 0 $pd-1;
+      color: $lightgrey;
+      i {
+        color: $blue;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+nav.bottom {
+  padding-top: $pd-5;
+  ul {
+    @include flex();
   }
 }
