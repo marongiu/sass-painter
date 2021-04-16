@@ -4,12 +4,12 @@ footer {
 
   .container {
     .footer-info {
-      @include flex(center,flex-start,no-wrap);
+      @include flex(center,flex-start,nowrap);
       .brand {
         padding: $pd-2 0;
         width: 30%;
         ul {
-          @include flex(center,space-between,no-wrap);
+          @include flex(center,space-between,nowrap);
         }
       }
 
@@ -17,7 +17,7 @@ footer {
         width: 70%;
         padding: $pd-2 0;
         ul {
-          @include flex(center,flex-end,no-wrap);
+          @include flex(center,flex-end,nowrap);
 
           li {
             color: $white;
@@ -25,6 +25,68 @@ footer {
             font-size: 12px;
             a {
               color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .title {
+    width: 100%!important;
+  }
+
+  nav.bottom ul li, nav.top-right ul li {
+    display: none;
+  }
+
+  nav.bottom ul li:first-child {
+    display: block;
+  }
+
+  .jumbotron {
+    .container {
+      .title {
+        .button-title {
+          a:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .gallery-card {
+    width: 100%!important;
+    height: 300px;
+  }
+
+  .link {
+    ul {
+      width: 100%!important;
+    }
+
+  }
+
+  footer {
+    .container {
+      width: 100%;
+      .footer-info {
+        .brand {
+          display: none;
+        }
+
+        .copyright {
+          width: 100%!important;
+          ul {
+            li{
+              display: none;
+              &:last-child {
+                display: block;
+                margin: 0 auto;
+              }
             }
           }
         }

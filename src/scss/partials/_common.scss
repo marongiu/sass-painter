@@ -24,17 +24,3 @@ body {
 .blue {
   background-color: $blue;
 }
-
-@media all and (max-width: 1000px) {
-  .title {
-    width: 100%!important;
-  }
-
-  nav.bottom ul li, nav.top-right ul li {
-    display: none;
-  }
-
-  nav.bottom ul li:first-child {
-    display: block;
-  }
-}

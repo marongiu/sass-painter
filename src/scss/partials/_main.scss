@@ -6,7 +6,7 @@ main {
   }
 
   .card-content {
-    @include flex(center,space-between,no-wrap);
+    @include flex(center,center,wrap);
 
     .main-card {
       padding: $pd-3 $pd-1;

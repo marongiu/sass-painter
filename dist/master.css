@@ -39,19 +39,6 @@ body {
   background-color: #009cff;
 }
 
-@media all and (max-width: 1000px) {
-  .title {
-    width: 100% !important;
-  }
-
-  nav.bottom ul li, nav.top-right ul li {
-    display: none;
-  }
-
-  nav.bottom ul li:first-child {
-    display: block;
-  }
-}
 header {
   background: #101010;
   width: 100%;
@@ -155,8 +142,8 @@ main .main-title {
 main .card-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: no-wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 main .card-content .main-card {
   padding: 30px 10px;
@@ -228,7 +215,7 @@ footer .container .footer-info {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
 }
 footer .container .footer-info .brand {
   padding: 20px 0;
@@ -238,7 +225,7 @@ footer .container .footer-info .brand ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
 }
 footer .container .footer-info .copyright {
   width: 70%;
@@ -248,7 +235,7 @@ footer .container .footer-info .copyright ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
 }
 footer .container .footer-info .copyright ul li {
   color: #ffff;
@@ -257,4 +244,48 @@ footer .container .footer-info .copyright ul li {
 }
 footer .container .footer-info .copyright ul li a {
   color: #ffff;
+}
+
+@media all and (max-width: 1000px) {
+  .title {
+    width: 100% !important;
+  }
+
+  nav.bottom ul li, nav.top-right ul li {
+    display: none;
+  }
+
+  nav.bottom ul li:first-child {
+    display: block;
+  }
+
+  .jumbotron .container .title .button-title a:last-child {
+    display: none;
+  }
+
+  .gallery-card {
+    width: 100% !important;
+    height: 300px;
+  }
+
+  .link ul {
+    width: 100% !important;
+  }
+
+  footer .container {
+    width: 100%;
+  }
+  footer .container .footer-info .brand {
+    display: none;
+  }
+  footer .container .footer-info .copyright {
+    width: 100% !important;
+  }
+  footer .container .footer-info .copyright ul li {
+    display: none;
+  }
+  footer .container .footer-info .copyright ul li:last-child {
+    display: block;
+    margin: 0 auto;
+  }
 }
