@@ -22,5 +22,22 @@ nav.bottom {
   padding-top: $pd-5;
   ul {
     @include flex();
+    flex-wrap: wrap;
+    li {
+      padding-left: $pd-2;
+      a {
+        color: $white;
+        font-size: 14px;
+      }
+      i {
+        color: $lightgrey;
+        padding: 0 3px;
+        font-size: 11px;
+      }
+
+      img {
+        height: 25px;
+      }
+    }
   }
 }

@@ -1,0 +1,14 @@
+.jumbotron {
+  width: 100%;
+  height: $jumbo-heigth;
+  background-image: url('https://www.painterartist.com/static/ptr/product_content/painter/2021/hero-ptr-2021.jpg');
+  background-size: cover;
+    .container {
+      .title {
+        margin-top: $mt-5;
+        img {
+          height: 50px;
+        }
+      }
+    }
+}
