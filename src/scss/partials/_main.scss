@@ -6,13 +6,10 @@ main {
   }
 
   .card-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(center,space-between,no-wrap);
 
     .main-card {
       padding: $pd-3 $pd-1;
-      height: 250px;
 
       img {
         width: 100%;
@@ -41,7 +38,7 @@ main {
   }
 
   .gallery {
-    margin-top: $mt-200;
+    margin-top: $mt-2;
     .gallery-card {
       width: calc(100% / 2);
       height: 300px;
@@ -55,9 +52,7 @@ main {
   }
 
   .gallery::after {
-    display: table;
-    clear: both;
-    content: '';
+    @include clearfix();
   }
 
   .link {
@@ -79,8 +74,6 @@ main {
   }
 
   .link::after {
-    display: table;
-    clear: both;
-    content: '';
+    @include clearfix();
   }
 }

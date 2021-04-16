@@ -1,20 +1,16 @@
 footer {
   background: $lightblack;
   width: 100%;
-  height: 100px;
 
   .container {
     .footer-info {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
+      @include flex(center,center,no-wrap)
       .brand {
         padding: $pd-2 0;
         width: 50%;
         ul {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
+          @include flex(center,space-around,no-wrap)
         }
       }
 
@@ -22,9 +18,7 @@ footer {
           width: 50%;
           padding: $pd-2 0;
         ul {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include flex(center,center, no-wrap);
 
           li {
             color: $white;

@@ -3,8 +3,7 @@ nav.top-right {
   color: $white;
   margin-top: $mt-2;
   ul {
-    display: flex;
-    align-items: center;
+    @include flex(center, center, wrap);
     li {
       padding: 0 $pd-1;
       color: $lightgrey;
@@ -21,8 +20,7 @@ nav.top-right {
 nav.bottom {
   padding-top: $pd-5;
   ul {
-    @include flex();
-    flex-wrap: wrap;
+    @include flex(center, center, wrap);
     li {
       padding-left: $pd-2;
       a {

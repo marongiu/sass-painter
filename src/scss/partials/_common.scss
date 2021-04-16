@@ -25,13 +25,16 @@ body {
   background-color: $blue;
 }
 
-// @media all and (max-width: 1760px) {
-//   .jumbotron {
-//     background-image: none!important;
-//     background-color: #036072;
-//   }
-//
-//   .title {
-//     justify-content: center!important;
-//   }
-// }
+@media all and (max-width: 1000px) {
+  .title {
+    width: 100%!important;
+  }
+
+  nav.bottom ul li, nav.top-right ul li {
+    display: none;
+  }
+
+  nav.bottom ul li:first-child {
+    display: block;
+  }
+}
