@@ -2,13 +2,52 @@
   width: 100%;
   height: $jumbo-heigth;
   background-image: url('https://www.painterartist.com/static/ptr/product_content/painter/2021/hero-ptr-2021.jpg');
-  background-size: cover;
-    .container {
-      .title {
-        margin-top: $mt-5;
-        img {
-          height: 50px;
+  background-position: top center;
+
+  .container {
+
+    .title {
+      margin-top: $mt-4;
+      float: right;
+      width: 60%;
+
+      img {
+        height: 50px;
+        filter: brightness(120);
+        padding-bottom: $pd-2;
+      }
+
+      p {
+        color: $white;
+        font-size: 24px;
+      }
+
+      .sub-title {
+        padding-top: $pd-3;
+        color: $purple;
+        p {
+          font-size: 17px;
+          color: $purple;
         }
       }
+
+      .button-title {
+        padding-top: $pd-5;
+        a {
+          border: 1px solid black;
+          padding: $pd-1 $pd-2;
+          color: $white;
+          margin-right: $mt-1;
+        }
+        a:first-child {
+          background-color: $black;
+          padding: $pd-1 $pd-2;
+          color: $white;
+        }
+
+      }
+
     }
+
+  }
 }
