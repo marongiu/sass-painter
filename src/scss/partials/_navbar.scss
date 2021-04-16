@@ -1,0 +1,9 @@
+nav {
+  float: right;
+  color: $white;
+  margin-top: $mt-2;
+  ul {
+    display: flex;
+    align-items: center;
+  }
+}
