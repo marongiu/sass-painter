@@ -24,7 +24,7 @@ main {
         padding: $pd-2;
 
         * {
-          padding-top: $pd-2;
+          padding: $pd-1 0;
         }
         h4 em {
           color: $blue;
@@ -48,6 +48,24 @@ main {
         height: 100%;
         width: 100%;
       }
+
+      .gallery-card-title {
+        padding: $pd-5;
+        color: $white;
+        line-height: 30px;
+
+          * {
+            margin: $mt-1 0;
+          }
+          p {
+            font-size: 18px;
+          }
+
+          a {
+            padding: $pd-1 $pd-2 - 5;
+            background: $white;
+          }
+      }
     }
   }
 
@@ -55,12 +73,22 @@ main {
     @include clearfix();
   }
 
-  .link {
+  .social-newtork {
     margin-top: $mt-3;
+    ul {
+      @include flex(center,flex-end,nowrap);
+      li {
+        padding: 0 $pd-1;
+        font-size: 30px;
+      }
+    }
+  }
+
+  .link {
     margin-bottom: $mt-3;
 
     ul {
-      margin-top: $mt-5;
+      margin-top: $mt-2;
       float: left;
       width: calc(100% / 4);
       li {
